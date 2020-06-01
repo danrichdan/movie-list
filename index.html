@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.css"
+      integrity="sha256-8BrtNNtStED9syS9F+xXeP815KGv6ELiCfJFQmGi1Bg="
+      crossorigin="anonymous"
+    />
+    <style>
+      .box {
+        margin-top: 10px;
+      }
+      form {
+        margin-bottom: 50px;
+      }
+    </style>
+    <title>Movie List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <h1 class="title">Add a Movie</h1>
+        <form id="movie-form">
+          <div class="field">
+            <label class="label">Title</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Title" id="title" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Director</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Director"
+                id="director"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Star</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="Star" id="star" />
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Year Released</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Year Released"
+                id="year"
+              />
+            </div>
+          </div>
+          <input
+            class="button is-medium is-fullwidth is-primary"
+            type="submit"
+            value="Add Movie"
+          />
+        </form>
+        <table class="table is-fullwidth">
+          <thead>
+            <th>Title</th>
+            <th>Director</th>
+            <th>Star</th>
+            <th>Year</th>
+            <th></th>
+          </thead>
+          <tbody id="movie-list"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
